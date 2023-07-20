@@ -57,8 +57,8 @@ This is a simple Node.js dynamic app, that shows singers information about them
 
 ## Priority Considerations
 
-- Security
-- Accessibility
-- Responsiveness
-- UI/UX
-- Clean Code
+- [x] Security
+- [x] Accessibility
+- [x] Responsiveness
+- [x] UI/UX
+- [x] Clean Code
