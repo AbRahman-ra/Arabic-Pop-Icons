@@ -3,11 +3,10 @@ const fs = require("fs");
 const express = require("express");
 const renderMainPage = require("./modules/renderMainPage");
 const renderProfile = require("./modules/renderProfile");
-const url = require("url");
 
 // [2] INITIALIZE SERVER CONSTANTS
 const app = express();
-const PORT = 8080;
+const PORT = process.env.PORT || 3030;
 
 // [3] READ FILES & TEMPLATES
 const indexHTML = fs.readFileSync("./public/templates/index.html", "utf8");
@@ -31,7 +30,7 @@ let databaseObj = JSON.parse(database);
 
 // [4] SET UP THE SERVER
 app.use(express.static("./public"));
-app.listen(PORT, "127.0.0.1", () => {
+app.listen(PORT, () => {
   console.log(`server initialized at port ${PORT}...`);
 });
 
