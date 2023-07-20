@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "futura-header";
+  src: url("/styles/assets/futura-bold.woff");
+}
+
+@font-face {
+  font-family: "sf-pro-regular";
+  src: url("/styles/assets/sf-pro-display-regular.woff"),
+    url("/styles/assets/sf-pro-display-regular.otf");
+}
+
+@font-face {
+  font-family: "sf-pro-medium";
+  src: url("/styles/assets/sf-pro-display-medium.woff"),
+    url("/styles/assets/sf-pro-display-medium.otf");
+}
+
+@font-face {
+  font-family: "sf-pro-bold";
+  src: url("/styles/assets/sf-pro-display-bold.woff"),
+    url("/styles/assets/sf-pro-display-bold.otf");
+}

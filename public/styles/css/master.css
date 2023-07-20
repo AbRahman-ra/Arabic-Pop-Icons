@@ -1,0 +1,132 @@
+@import url("./modules/fonts.css");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: radial-gradient(
+      ellipse 40% 80% at 110% 100%,
+      rgba(0, 176, 139, 1),
+      rgba(0, 132, 202, 0.5),
+      rgba(0, 35, 156, 0.4),
+      transparent
+    ),
+    radial-gradient(
+      ellipse 100% 25% at 0% 100%,
+      rgba(206, 0, 88, 1),
+      rgba(206, 0, 88, 0.5),
+      transparent
+    ),
+    radial-gradient(ellipse 100% 100% at 100% 100%, black, black);
+  min-height: 100vh;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 1rem;
+  max-height: 6rem;
+  width: 90%;
+  border-bottom: 1px solid #aaa;
+}
+
+.logo-container a {
+  display: flex;
+  align-items: center;
+  max-height: inherit;
+  text-decoration: none;
+}
+
+.logo {
+  filter: invert(74%) sepia(91%) saturate(677%) hue-rotate(357deg)
+    brightness(101%) contrast(106%);
+  height: 100%;
+  max-height: inherit;
+}
+
+.logo-container a label {
+  color: #ddd;
+  font-family: "sf-pro-regular", sans-serif;
+  font-size: 1.25rem;
+}
+
+.logo-container a label:hover {
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 0;
+  margin-top: 5rem;
+
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.15),
+    transparent
+  );
+  color: whitesmoke;
+  font-family: "sf-pro-regular", sans-serif;
+  text-align: center;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+}
+
+footer a {
+  display: inline-flex;
+  justify-content: center;
+  width: 25%;
+  max-width: 3em;
+  text-decoration: none;
+  margin: 0.5em;
+  padding: 1em;
+  border-radius: 1rem;
+  border-bottom: 3px solid gold;
+}
+
+footer img {
+  width: 100%;
+  margin: 0 auto;
+  filter: grayscale(1);
+  transition: 0.3s ease-in-out;
+}
+
+footer span {
+  font-size: 1.15em;
+}
+
+footer p {
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+
+footer a:hover img {
+  filter: grayscale(0);
+  border-radius: 0.3em;
+}
+
+@media screen and (max-width: 970px) {
+  .logo-container {
+    max-height: 3.5rem;
+    margin-top: 1rem;
+    justify-content: center;
+  }
+
+  .logo-container a label {
+    font-size: 1.25rem;
+  }
+}

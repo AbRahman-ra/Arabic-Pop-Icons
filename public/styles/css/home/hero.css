@@ -1,0 +1,152 @@
+@import url("../modules/fonts.css");
+
+.hero {
+  background-image: radial-gradient(
+      ellipse 30% 100% at -4% 5%,
+      #ce0058,
+      transparent
+    ),
+    radial-gradient(ellipse 100% 75% at 0% 0%, #cf4520, #460702, transparent),
+    radial-gradient(ellipse 100% 100% at 100% 100%, black, black);
+
+  display: flex;
+  width: 100%;
+  max-width: 100vw;
+  justify-content: center;
+  align-items: stretch;
+  text-align: justify;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  border-bottom: 3px solid #eee;
+  background-size: 150% 150%;
+  animation-name: colors-circulating;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes colors-circulating {
+  0% {
+    background-position: 0 0, 0 0, 100% 100%;
+  }
+  100% {
+    background-position: 100% 100%, 100% 100%, 0 0;
+  }
+}
+
+.hero-text-container {
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  max-height: 80%;
+  align-items: center;
+  justify-content: space-between;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 35%;
+  margin: auto 0;
+  padding: 1em;
+}
+
+.hero-figure {
+  height: 540px;
+  max-height: 100%;
+  max-width: 600px;
+}
+
+.hero-figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-figure img[src="/images/featured/nancy-ajram.png"] {
+  object-position: 0 15%;
+}
+
+.hero h1,
+.hero h2 {
+  color: whitesmoke;
+  font-family: "futura-header", sans-serif;
+}
+
+.hero h1 {
+  font-size: 5em;
+  line-height: 0.9em;
+  margin: 0.5em auto;
+}
+
+.hero p,
+.hero span {
+  font-family: "sf-pro-regular", sans-serif;
+  color: #d1e0d7;
+  line-height: 1.25em;
+  font-size: 1.25em;
+}
+
+.hero span {
+  text-align: left;
+  width: 100%;
+}
+
+.hero p {
+  margin-bottom: 3em;
+}
+
+.hero button {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1em 2em;
+  height: fit-content;
+  border-radius: 3em;
+  background-color: #a51890;
+  transition: 0.3s ease-in-out;
+  outline: none;
+  border: none;
+}
+
+a {
+  width: max-content;
+  height: fit-content;
+}
+
+.hero button h2 {
+  font-size: 2em;
+  color: #eee;
+  transition: 0.3s ease-in-out;
+}
+
+.hero button:hover {
+  cursor: pointer;
+  background-color: #eee;
+}
+
+.hero button:hover h2 {
+  color: #a51890;
+}
+
+@media screen and (max-width: 970px) {
+  .hero h1 {
+    font-size: 4rem;
+  }
+
+  .hero-figure {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .hero-figure img {
+    max-width: inherit;
+    height: inherit;
+  }
+
+  .hero button h2 {
+    font-size: 1.75em;
+  }
+
+  .hero-text-container {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}

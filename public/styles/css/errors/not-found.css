@@ -1,0 +1,56 @@
+@import url("../modules/fonts.css");
+
+.not-found-section {
+  margin: 7.5em auto;
+  display: flex;
+  width: 80%;
+  max-width: 630px;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.not-found-section h1 {
+  font-family: "futura-header", sans-serif;
+  font-size: 2.5em;
+  color: whitesmoke;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.not-found-section a {
+  text-decoration: none;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: fit-content;
+  margin: 0 auto;
+  max-width: 70%;
+}
+
+.not-found-section button {
+  width: inherit;
+  padding: 0.75em 1.5em;
+  height: fit-content;
+  border-radius: 3em;
+  background-color: #a51890;
+  transition: 0.3s ease-in-out;
+  outline: none;
+  border: none;
+  color: whitesmoke;
+  margin: 0 auto;
+}
+
+.not-found-section h2 {
+  font-family: "futura-header", sans-serif;
+  font-size: 1.75em;
+  color: whitesmoke;
+  transition: 0.3s ease-in-out;
+}
+
+.not-found-section a:hover button {
+  cursor: pointer;
+  background-color: #eee;
+}
+
+.not-found-section a:hover h2 {
+  color: #a51890;
+}

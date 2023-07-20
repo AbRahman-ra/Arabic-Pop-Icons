@@ -1,0 +1,31 @@
+<!--Logo-->
+<section class="logo-container">
+  <a href="/">
+    <img
+      src="./images/logo.svg"
+      alt="The website logo, showing the Arabic letter Ain, merged with the musical scale"
+      class="logo"
+      id="logo"
+    />
+    <label for="logo">Arabic Pop Icons</label>
+  </a>
+</section>
+
+<section class="hero-text-container">
+  <!--featuring-->
+  <span class="featuring">featuring...</span>
+  <!--Singer-->
+  <h1 class="hero-singer-name">{singerNameFeatured}</h1>
+  <!--Caption-->
+  <p class="hero-singer-caption">{singerCaptionFeatured}</p>
+  <!--CTA-->
+  <a href="/singer?name={singerUrl}" class="hero-explore-href" target="_blank">
+    <button type="button" class="hero-explore-button">
+      <h2>Explore {singerNameFeatured}</h2>
+    </button>
+  </a>
+</section>
+<!--Image-->
+<figure class="hero-figure">
+  <img src="/images/featured/{imageNameFeatured}" alt="{altFeatured}" />
+</figure>

@@ -1,0 +1,101 @@
+@import url("../modules/fonts.css");
+
+.main-singers-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 82rem;
+  justify-content: center;
+  align-items: stretch;
+  margin: 0 auto;
+  margin-top: 2em;
+}
+
+.singer-data-container-index {
+  width: 100%;
+  max-width: 22rem;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 8%;
+  border: 3px solid;
+  border-color: #768692;
+  background-color: rgba(0, 0, 0, 0.35);
+  transition: 0.3s ease-in-out;
+}
+
+.singer-data-container-index:hover {
+  transform: scale(1.05);
+  background-color: rgba(0, 35, 156, 0.3);
+}
+
+.singer-data-container-index:hover button {
+  color: #a51890;
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.singer-data-container-index a {
+  text-decoration: none;
+}
+
+.singer-data-container-index h3 {
+  font-family: "futura-header", sans-serif;
+  font-size: 1.5em;
+  color: #eee;
+  text-align: center;
+}
+
+.singer-image-figure {
+  width: 100%;
+  max-width: inherit;
+  aspect-ratio: 4/3;
+  margin: 0 auto;
+}
+
+.singer-image-figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5%;
+  margin: 1em auto;
+}
+.singer-image-figure img[src="/images/main/nancy-ajram.jpg"] {
+  object-position: 0 15%;
+}
+
+.singer-data-container-index p {
+  font-family: "sf-pro-regular", sans-serif;
+  text-align: justify;
+  color: #c7c9c7;
+}
+
+.main-singer-button {
+  display: flex;
+  padding: 0.5em 1em;
+  width: 50%;
+  margin: 1.25em auto 0 auto;
+  outline: none;
+  border: none;
+  border-radius: 3em;
+  font-family: "sf-pro-bold", sans-serif;
+  font-size: 1.25em;
+  text-align: center;
+  justify-content: center;
+  color: #eee;
+  background-color: #425563;
+  transition: 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 1280px) and (min-width: 640px) {
+  .singer-data-container-index {
+    width: 40%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .singer-data-container-index {
+    max-width: 100%;
+  }
+}

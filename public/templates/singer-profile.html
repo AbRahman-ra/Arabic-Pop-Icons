@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/css/master.css" />
+    <link rel="stylesheet" href="./styles/css/singer/singer.css" />
+    <link rel="icon" href="./images/favicon.png" type="png" />
+    <title>{singerName} - API</title>
+  </head>
+
+  <body>
+    <!--Hero Banner-->
+    <header class="hero">
+      <!--Logo-->
+      <section class="logo-container">
+        <a href="/">
+          <img
+            src="./images/logo.svg"
+            alt="The website logo, showing the Arabic letter Ain, merged with the musical scale"
+            class="logo"
+            id="logo"
+          />
+          <label for="logo">Arabic Pop Icons</label>
+        </a>
+      </section>
+
+      <!--Singer-->
+      <h1 class="profile-hero-singer-name">{singerName}</h1>
+
+      <!--Image-->
+      <figure class="profile-hero-figure">
+        <img src="/images/main/{imageName}" alt="{alt}" />
+      </figure>
+
+      <section class="profile-hero-text-container">
+        <!--Date of Birth-->
+        <p class="profile-hero-singer-caption">Birthday 🎂: {singerDOB}</p>
+        <!--From-->
+        <span class="profile-singer-country">From: {from}</span>
+        <!--Bio-->
+        <p class="profile-hero-singer-bio">About {singerName}: {bio}</p>
+        <!--Top Song-->
+        <span class="profile-singer-top-song"
+          >Top Song 🎶🚀: {bestSongName}</span
+        >
+      </section>
+    </header>
+
+    <!--Singer Content-->
+    <main>
+      <h2>{singerName} Best Picks 🔥</h2>
+      <iframe
+        src="{bestSongLink}"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+      <iframe
+        src="{anotherSongLink}"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+
+      <a href="{YouTubeChannelLink}">
+        <button type="button"><h3>Visit {singerName} YT Channel</h3></button>
+      </a>
+    </main>
+    <!--Footer-->
+  </body>
+</html>
