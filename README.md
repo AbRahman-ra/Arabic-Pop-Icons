@@ -2,7 +2,7 @@
 
 ---
 
-## [Deployed Page Will Be Updated Later]
+## [Deployed Page](https://arabic-pop-icons.onrender.com/)
 
 ## Concept
 
