@@ -2,7 +2,7 @@
 
 ---
 
-## [Deployed Page](https://arabic-pop-icons.onrender.com/)
+## [Deployed WebPage](https://arabic-pop-icons.onrender.com/)
 
 ## Concept
 
